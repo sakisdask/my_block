@@ -1,0 +1,126 @@
+/* center video */
+
+.container .center .empyt span {
+    box-shadow: 1px 0px 5px 2px #1c97bd66;
+    pointer-events: none;
+    background-color: #1c97bd66;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    padding: 0.4rem;
+    width: 10em;
+    text-align: center;
+    height: 3rem;
+    top: 30;
+    left: 70;
+    z-index: 0;
+}
+
+.container .center .empyt i {
+    color: #1ed10dcb;
+    display: block;
+    position: absolute;
+    top: 40;
+    left: 20;
+}
+
+.container .center .videos {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 100;
+    left: 100;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 3;
+}
+
+.container .center .videos div {
+    background-color: #6ea03c00;
+    display: block;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .center .videos div video {
+    background-color: #1b1b8f55;
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    padding-bottom: 1rem;
+}
+
+.container .center .videos div span {
+    pointer-events: none;
+    color: #cab4b4;
+    text-align: center;
+    background-color: #1b1b8f22;
+    display: block;
+    font-size: large;
+    font-weight: 800;
+    padding: 0.5rem;
+    position: absolute;
+    top: 40;
+    left: 15;
+    width: 4rem;
+    visibility: hidden;
+    border: 2px solid black;
+}
+
+.container .center .videos div:hover span {
+    visibility: visible;
+    transition: width 0.1s ease-in-out;
+    width: 8.2rem;
+    z-index: 3;
+}
+
+
+/* MY MUSIC creates */
+
+.container .center .empyt .mycover2 {
+    box-shadow: 1px 0px 5px 2px #1cbd5f66;
+    pointer-events: none;
+    background-color: #1cbd5f66;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    padding-top: 1rem;
+    width: 10rem;
+    text-align: center;
+    height: 3rem;
+    top: 30;
+    left: 70;
+    z-index: 0;
+}
+
+
+/* colors menu */
+
+.container .menu2:hover span {
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .container .center .videos {
+        width: 90%;
+        top: 120;
+        left: 50;
+    }
+    .container .center .videos div span {
+        left: 5;
+        top: 80;
+    }
+}

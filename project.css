@@ -1,0 +1,344 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("Roboto.ttf")
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+
+/* menu  left*/
+
+.container .menu {
+    background-color: #6494ed00;
+    height: 100vh;
+    width: 0.5rem;
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.container .menu:hover {
+    width: 11rem;
+    transition: width 0.2s ease-in-out;
+}
+
+.container .menu .title {
+    pointer-events: none;
+    display: block;
+    font-weight: bolder;
+    font-size: x-large;
+    padding-left: 4rem;
+    padding-top: 0.5rem;
+}
+
+.container .menu .icons i {
+    display: block;
+    color: black;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-right: 0.25rem;
+}
+
+.container .menu .icons i span {
+    opacity: 0;
+}
+
+.container .menu .icons a[href*="www"] {
+    display: block;
+    text-decoration: none;
+    flex: 1 100%;
+    font-size: 6rem;
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    border: 2px solid transparent;
+}
+
+.container .menu .icons a i span {
+    box-sizing: border-box;
+    padding-top: 0.25rem;
+    font-size: 1.7rem;
+}
+
+.container .menu .icons a:first-child:hover i {
+    color: rgb(72, 72, 212);
+}
+
+.container .menu .icons a:first-child:hover i span {
+    color: black;
+    opacity: 1;
+}
+
+.container .menu .icons .in:hover i {
+    color: rgb(73, 3, 8);
+}
+
+.container .menu .icons .in:hover i span {
+    color: black;
+    opacity: 1;
+}
+
+.container .menu .icons .y:hover i {
+    color: #910c15;
+}
+
+.container .menu .icons .y:hover i span {
+    color: black;
+    opacity: 1;
+}
+
+.container .menu .icons a:last-child:hover i {
+    color: #154905;
+}
+
+.container .menu .icons a:last-child:hover i span {
+    color: black;
+    opacity: 1;
+}
+
+
+/* Center */
+
+.container .center {
+    flex: 1 100%;
+}
+
+.container .center i:first-child {
+    display: block;
+    pointer-events: none;
+    font-size: 2.5rem;
+    color: lightcyan;
+    position: absolute;
+    left: 3;
+    top: 10;
+}
+
+.container .center .empyt {
+    background-color: #76879800;
+    z-index: 1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .center img {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* menu Right */
+
+.container .menu2 {
+    background-color: #6494ed00;
+    height: 100vh;
+    width: 0.5rem;
+    right: 0;
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.container .menu2:hover {
+    width: 11rem;
+    transition: width 0.2s ease-in-out;
+}
+
+.container .menu2 .icons2 i {
+    display: block;
+    color: black;
+    font-size: 2.2rem;
+    padding-left: 2rem;
+}
+
+.container .menu2 .icons2 a[href*="www"] {
+    display: block;
+    text-decoration: none;
+    flex: 1;
+    font-size: 6rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    border: 2px solid transparent;
+}
+
+.container .menu2 .icons2 a i span {
+    box-sizing: border-box;
+    padding-top: 0.25rem;
+    font-size: 1.7rem;
+}
+
+.container .menu2 .icons2 .v:hover i {
+    color: #babd1c;
+}
+
+.container .menu2 .icons2 .ph:hover i {
+    color: #31a33a;
+}
+
+
+/* rutern */
+
+.container .menu2 .icons2 .r:hover i {
+    color: #09154b;
+}
+
+.container .center i:last-child {
+    display: block;
+    pointer-events: none;
+    font-size: 2.5rem;
+    color: lightcyan;
+    position: absolute;
+    right: 3;
+    top: 10;
+}
+
+.container .menu2 .gallery {
+    pointer-events: none;
+    display: block;
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 2.5rem;
+}
+
+
+/* center-information */
+
+.container .center .socialbox {
+    border-radius: 50px;
+    background-color: #dc143c33;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 230;
+    left: 360;
+    width: 40vw;
+    height: 30vh;
+}
+
+.container .center .socialbox .leftside {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .center .socialbox .rightside {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container .center .socialbox .leftside i {
+    display: block;
+    font-size: 4rem;
+}
+
+.container .center .socialbox .leftside span {
+    font-size: 4rem;
+    padding: 3rem;
+}
+
+.container .center .socialbox .rightside span {
+    display: block;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 50;
+    left: 2;
+}
+
+.container .center .socialbox .rightside i {
+    display: block;
+    font-size: 4rem;
+    position: absolute;
+    top: 92;
+    right: 50;
+}
+
+.container .center .welcome {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150;
+    left: 355;
+    width: 40vw;
+    height: 15vh;
+}
+
+.container .center .welcome span {
+    border-radius: 50px;
+    color: #99390dce;
+    flex: 1;
+    font-family: "roboto";
+    text-align: center;
+    display: block;
+    font-weight: bolder;
+    padding: 4rem;
+    font-size: x-large;
+}
+
+@media screen and (max-width:768px) {
+    .container .menu {
+        z-index: 6;
+    }
+    .container .menu2 {
+        z-index: 6;
+    }
+    .container .center .socialbox {
+        top: 250;
+        left: 200;
+        width: 45vw;
+        height: 20vh;
+    }
+    .container .center .welcome {
+        top: 160;
+        left: 160;
+        width: 55vw;
+        height: 15vh;
+    }
+    .container .center .socialbox .leftside span {
+        font-size: 2.5rem;
+        padding: 1.2rem;
+    }
+    .container .center .socialbox .rightside span {
+        font-size: 2.5rem;
+        padding: 0.5rem;
+        bottom: 25;
+        left: 0;
+    }
+    .container .center .socialbox .rightside i {
+        top: 101;
+    }
+    .container .menu .icons a[href*="www"] {
+        padding-top: 0.5rem;
+    }
+    .container .menu2 .icons2 a[href*="www"] {
+        margin-top: 1rem;
+    }
+}
+
+
+/* ipad */
+
+@media screen and (max-height:1024px) {
+    .container .center .socialbox .rightside i {
+        top: 80;
+    }
+}

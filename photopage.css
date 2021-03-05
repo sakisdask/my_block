@@ -1,0 +1,206 @@
+         /* left side  */
+         
+         .container .center .menuphoto-left {
+             position: absolute;
+             width: 30vw;
+             max-height: 70px;
+             overflow: hidden;
+             top: 60;
+             left: 65;
+             z-index: 5;
+             transition: all 0.3s ease-out;
+         }
+         
+         .container .center .menuphoto-left .holland-button {
+             border-radius: 40px;
+             font-family: "roboto";
+             background-color: #ddd3d3b0;
+             display: block;
+             color: #000000;
+             text-decoration: none;
+             text-align: center;
+             padding: 1rem;
+             font-size: xx-large;
+             font-weight: 800;
+         }
+         
+         .container .center .menuphoto-left .holland-button:hover {
+             background-color: #da1a1a7c;
+         }
+         
+         .container .center .menuphoto-left .holland {
+             background-color: #011b5556;
+             border-radius: 40px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             margin-top: 0.5rem;
+             width: 100%;
+             height: 350px;
+             overflow: auto;
+             overflow-x: hidden;
+         }
+         
+         .container .center .menuphoto-left:hover {
+             max-height: 68vh;
+             transition: all 0.2s ease-in;
+         }
+         /* image Netherlands */
+         
+         .container .center .menuphoto-left .holland img {
+             margin-top: 0.5rem;
+             flex: 0 100%;
+             width: 25rem;
+             height: 25rem;
+             border: 15px solid transparent;
+             box-sizing: border-box;
+         }
+         
+         .container .center .menuphoto-left .holland .auto {
+             width: 19rem;
+         }
+         /* right side  */
+         
+         .container .center .menuphoto-right {
+             position: absolute;
+             width: 30vw;
+             max-height: 70px;
+             overflow: hidden;
+             top: 60;
+             left: 710;
+             z-index: 5;
+             transition: all 0.3s ease-out;
+         }
+         
+         .container .center .menuphoto-right .paros-button {
+             border-radius: 50px;
+             background-color: #1a49afb0;
+             font-family: "roboto";
+             display: block;
+             color: black;
+             text-decoration: none;
+             text-align: center;
+             padding: 1rem;
+             font-size: xx-large;
+             font-weight: 800;
+         }
+         
+         .container .center .menuphoto-right .paros-button:hover {
+             background-color: #1a49af48;
+         }
+         
+         .container .center .menuphoto-right .paros {
+             border-radius: 50px;
+             background-color: #ffffff4b;
+             margin-top: 0.5rem;
+             width: 100%;
+             height: 350px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             overflow: auto;
+             overflow-x: hidden;
+         }
+         
+         .container .center .menuphoto-right:hover {
+             max-height: 68vh;
+             transition: all 0.2s ease-in;
+         }
+         /* image Paros */
+         
+         .container .center .menuphoto-right .paros img {
+             flex: 0 100%;
+             width: 25rem;
+             height: 25rem;
+             border: 15px solid transparent;
+             box-sizing: border-box;
+         }
+         
+         .container .center .menuphoto-right .paros .auto {
+             width: 19rem;
+         }
+         
+         .container .center .span-center span {
+             border-radius: 50px;
+             position: absolute;
+             top: 260;
+             left: 420;
+             color: #99390dce;
+             font-family: "roboto";
+             text-align: center;
+             display: block;
+             font-weight: bolder;
+             padding: 4rem;
+             font-size: xx-large;
+         }
+         
+         .container .center .span-center span i {
+             display: block;
+             color: #99390dce;
+         }
+         
+         @media screen and (max-width:768px) {
+             /*netherlands  */
+             .container .center .menuphoto-left {
+                 border-radius: 40px;
+                 width: 15rem;
+                 height: 20rem;
+                 top: 110;
+                 left: 60;
+             }
+             .container .center .menuphoto-left .holland {
+                 margin-top: 1rem;
+             }
+             .container .center .menuphoto-left .holland-button {
+                 margin: 1rem;
+                 margin-right: 0.5rem;
+                 font-size: medium;
+             }
+             .container .center .menuphoto-left .holland img {
+                 width: 15rem;
+             }
+             .container .center .menuphoto-left .holland .auto {
+                 width: 14rem;
+             }
+             /* Paros */
+             .container .center .menuphoto-right {
+                 border-radius: 40px;
+                 width: 15rem;
+                 height: 20rem;
+                 top: 110;
+                 left: 350;
+             }
+             .container .center .menuphoto-right .paros {
+                 margin-top: 1rem;
+                 margin-right: 0.5rem;
+             }
+             .container .center .menuphoto-right .paros-button {
+                 margin: 1rem;
+                 font-size: small;
+             }
+             .container .center .menuphoto-right .paros img {
+                 width: 15rem;
+                 height: 15rem;
+             }
+             .container .center .menuphoto-right .paros .auto {
+                 width: 14rem;
+                 height: 18rem;
+             }
+             .container .center .span-center span {
+                 top: 250;
+                 left: 150;
+             }
+         }
+         /* ipad */
+         
+         @media screen and (max-height:1024px) {
+             .container .center .menuphoto-left {
+                 height: 100%;
+             }
+             .container .center .menuphoto-right {
+                 height: 100%;
+             }
+             .container .center .span-center span {
+                 top: 400;
+             }
+         }

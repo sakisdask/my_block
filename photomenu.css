@@ -1,0 +1,98 @@
+.container .center .photo-icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 170;
+    left: 280;
+    width: 50vw;
+    height: 50vh;
+    z-index: 5;
+}
+
+.container .center .photo-icon .iconsphoto {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50vw;
+    height: 25vh;
+}
+
+.container .center .photo-icon .iconsphoto a[href*="www"] {
+    text-decoration: none;
+    background-color: #1b0ca359;
+    flex: 1;
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 100px;
+}
+
+.container .center .photo-icon .iconsphoto a[href*="www"]:hover {
+    box-shadow: 1px 0 6px 5px #1b0ca331;
+    background-color: transparent;
+}
+
+.container .center .photo-icon .iconsphoto a[href*="www"]:hover span {
+    color: #fae6e4f8;
+}
+
+.container .center .photo-icon .iconsphoto a span {
+    pointer-events: none;
+    border-radius: 100px;
+    color: #000000;
+    margin-top: 1.5rem;
+    text-align: center;
+    display: block;
+    font-size: 25;
+    font-weight: bolder;
+    padding: 0.5rem;
+    padding-right: 0.2rem;
+}
+
+
+/* colors menu */
+
+.container .menu2:hover span {
+    color: white;
+}
+
+.container .menu:hover span {
+    color: white;
+}
+
+.container .menu .icons a:first-child:hover i span {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.container .menu .icons .in:hover i span {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.container .menu .icons .y:hover i span {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.container .menu .icons a:last-child:hover i span {
+    color: #ffffff;
+    opacity: 1;
+}
+
+@media screen and (max-width:768px) {
+    .container .center .photo-icon {
+        left: 175;
+    }
+    .container .center .photo-icon .iconsphoto {
+        flex-wrap: wrap;
+    }
+    .container .center .photo-icon .iconsphoto a:first-child {
+        flex: 0 100%;
+    }
+    .container .center .photo-icon .iconsphoto a span {
+        margin-top: 0.5;
+    }
+}
